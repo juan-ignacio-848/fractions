@@ -1,7 +1,10 @@
 package com.nmkip.fractions;
 
 public class Fraction {
+    private final int integerValue;
+
     public Fraction(int integerValue) {
+        this.integerValue = integerValue;
     }
 
     public Fraction plus(Fraction fraction) {
@@ -9,6 +12,6 @@ public class Fraction {
     }
 
     public int intValue() {
-        return 0;
+        return integerValue;
     }
 }
