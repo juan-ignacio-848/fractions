@@ -3,14 +3,17 @@ package com.nmkip.fractions;
 public class Fraction {
     private final int denominator;
     private final int integerValue;
+    private final int numerator;
 
     public Fraction(int integerValue) {
         this.integerValue = integerValue;
+        this.numerator = integerValue;
         this.denominator = 1;
     }
 
     public Fraction(int numerator, int denominator) {
         this.integerValue = numerator;
+        this.numerator = numerator;
         this.denominator = denominator;
     }
 
@@ -23,7 +26,7 @@ public class Fraction {
     }
 
     public int getNumerator() {
-        return 3;
+        return numerator;
     }
 
     public int getDenominator() {
