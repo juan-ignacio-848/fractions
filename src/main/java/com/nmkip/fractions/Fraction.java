@@ -1,8 +1,9 @@
 package com.nmkip.fractions;
 
 public class Fraction {
-    private final int denominator;
+
     private final int numerator;
+    private final int denominator;
 
     public Fraction(int integerValue) {
         this.numerator = integerValue;
