@@ -30,4 +30,11 @@ public class AddFractionsTest {
     public void negativeInputsAndNegativeOutputs() {
         assertEquals(-2, new Fraction(-3).plus(new Fraction(1)).intValue());
     }
+
+    @Test
+    public void nonTrivialButCommonDenominator() {
+        final Fraction sum = new Fraction(1, 5).plus(new Fraction(2, 3));
+        assertEquals(3, sum.getNumerator());
+        assertEquals(5, sum.getDenominator());
+    }
 }
