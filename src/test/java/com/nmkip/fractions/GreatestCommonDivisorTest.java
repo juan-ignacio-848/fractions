@@ -8,7 +8,7 @@ public class GreatestCommonDivisorTest {
 
     @Test
     public void reflexive() {
-        assertEquals(1, NumberTheory.gcd(1,1));
+        assertEquals(1, NumberTheory.gcd(1, 1));
         assertEquals(2, NumberTheory.gcd(2, 2));
         assertEquals(1, NumberTheory.gcd(-1, -1));
     }
@@ -16,13 +16,13 @@ public class GreatestCommonDivisorTest {
     @Test
     public void relativelyPrime() {
         assertEquals(1, NumberTheory.gcd(2, 3));
-        assertEquals(1, NumberTheory.gcd(4,7));
+        assertEquals(1, NumberTheory.gcd(4, 7));
         assertEquals(1, NumberTheory.gcd(-2, -3));
     }
 
     @Test
     public void oneIsMultipleOfTheOther() {
-        assertEquals(3, NumberTheory.gcd(3,9));
+        assertEquals(3, NumberTheory.gcd(3, 9));
         assertEquals(5, NumberTheory.gcd(5, 30));
     }
 

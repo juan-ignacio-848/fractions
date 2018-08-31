@@ -14,12 +14,12 @@ public class FractionEqualsTest {
 
     @Test
     public void differentNumerators() {
-        assertNotSame(new Fraction(1,5), new Fraction(2,5));
+        assertNotSame(new Fraction(1, 5), new Fraction(2, 5));
     }
 
     @Test
     public void differentDenominators() {
-        assertNotSame(new Fraction(1,5), new Fraction(2,7));
+        assertNotSame(new Fraction(1, 5), new Fraction(2, 7));
     }
 
     @Test

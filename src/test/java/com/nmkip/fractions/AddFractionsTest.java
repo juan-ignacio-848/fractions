@@ -1,6 +1,5 @@
 package com.nmkip.fractions;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -34,12 +33,12 @@ public class AddFractionsTest {
 
     @Test
     public void nonTrivialButCommonDenominator() {
-        assertEquals(new Fraction(3,5), new Fraction(1, 5).plus(new Fraction(2, 5)));
+        assertEquals(new Fraction(3, 5), new Fraction(1, 5).plus(new Fraction(2, 5)));
     }
 
     @Test
     public void differentDenominatorsWithoutReducing() {
-        assertEquals(new Fraction(5,6), new Fraction(1,2).plus(new Fraction(1, 3)));
+        assertEquals(new Fraction(5, 6), new Fraction(1, 2).plus(new Fraction(1, 3)));
     }
 
     @Test
@@ -59,7 +58,7 @@ public class AddFractionsTest {
 
     @Test
     public void reduceResultEvenWhenDenominatorsAreTheSame() {
-        assertEquals(new Fraction(3,2), new Fraction(3,4).plus(new Fraction(3, 4)));
+        assertEquals(new Fraction(3, 2), new Fraction(3, 4).plus(new Fraction(3, 4)));
     }
 
     @Test
