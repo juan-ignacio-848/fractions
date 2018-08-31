@@ -8,17 +8,17 @@ public class AddFractionsTest {
 
     @Test
     public void zeroPlusZero() {
-        assertEquals(0, new Fraction(0).plus(new Fraction(0)).intValue());
+        assertEquals(new Fraction(0), new Fraction(0).plus(new Fraction(0)));
     }
 
     @Test
     public void nonZeroPlusZero() {
-        assertEquals(3, new Fraction(3).plus(new Fraction(0)).intValue());
+        assertEquals(new Fraction(3), new Fraction(3).plus(new Fraction(0)));
     }
 
     @Test
     public void zeroPlusNonZero() {
-        assertEquals(5, new Fraction(0).plus(new Fraction(5)).intValue());
+        assertEquals(new Fraction(5), new Fraction(0).plus(new Fraction(5)));
     }
 
     @Test
@@ -33,8 +33,7 @@ public class AddFractionsTest {
 
     @Test
     public void nonTrivialButCommonDenominator() {
-        final Fraction sum = new Fraction(1, 5).plus(new Fraction(2, 5));
-        assertEquals(new Fraction(3,5), sum);
+        assertEquals(new Fraction(3,5), new Fraction(1, 5).plus(new Fraction(2, 5)));
     }
 
 
