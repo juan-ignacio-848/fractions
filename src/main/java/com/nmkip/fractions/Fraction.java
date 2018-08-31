@@ -19,17 +19,13 @@ public class Fraction {
     }
 
     public Fraction plus(Fraction that) {
-        if(this.denominator != that.denominator) {
-            return new Fraction(this.numerator * that.denominator + that.numerator * this.denominator,
-                    this.denominator * that.denominator);
-        } else {
-            return new Fraction(this.numerator + that.numerator, denominator);
-        }
+        return new Fraction(this.numerator * that.denominator + that.numerator * this.denominator,
+                this.denominator * that.denominator);
     }
-    
+
     @Override
     public boolean equals(Object other) {
-        if(other instanceof Fraction) {
+        if (other instanceof Fraction) {
             Fraction that = (Fraction) other;
             return this.numerator == that.numerator
                     && this.denominator == that.denominator;
