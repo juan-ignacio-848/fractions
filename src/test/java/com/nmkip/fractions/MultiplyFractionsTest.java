@@ -20,4 +20,9 @@ public class MultiplyFractionsTest {
     public void zeroTimesNonZero() {
         assertEquals(new Fraction(0), new Fraction(0).times(new Fraction(1)));
     }
+
+    @Test
+    public void oneTimesOne() {
+        assertEquals(new Fraction(1), new Fraction(1).times(new Fraction(1)));
+    }
 }
