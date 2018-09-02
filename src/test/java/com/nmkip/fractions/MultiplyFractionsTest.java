@@ -30,4 +30,9 @@ public class MultiplyFractionsTest {
     public void negativeTwoTimesOne() {
         assertEquals(new Fraction(-2), new Fraction(-2).times(new Fraction(1)));
     }
+
+    @Test
+    public void nonOneDenominatorTimesOne() {
+        assertEquals(new Fraction(1, 2), new Fraction(1, 2).times(new Fraction(1)));
+    }
 }
