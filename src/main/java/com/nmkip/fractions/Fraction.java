@@ -23,6 +23,10 @@ public class Fraction {
                 this.denominator * that.denominator);
     }
 
+    public Fraction times(Fraction that) {
+        return this;
+    }
+
     @Override
     public boolean equals(Object other) {
         if (other instanceof Fraction) {
@@ -42,4 +46,5 @@ public class Fraction {
     public String toString() {
         return String.format("%d/%d", numerator, denominator);
     }
+
 }
