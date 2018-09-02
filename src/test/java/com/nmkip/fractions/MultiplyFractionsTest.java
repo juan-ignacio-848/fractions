@@ -11,5 +11,13 @@ public class MultiplyFractionsTest {
         assertEquals(new Fraction(0), new Fraction(0).times(new Fraction(0)));
     }
 
+    @Test
+    public void nonZeroTimesZero() {
+        assertEquals(new Fraction(0), new Fraction(1).times(new Fraction(0)));
+    }
 
+    @Test
+    public void zeroTimesNonZero() {
+        assertEquals(new Fraction(0), new Fraction(0).times(new Fraction(1)));
+    }
 }

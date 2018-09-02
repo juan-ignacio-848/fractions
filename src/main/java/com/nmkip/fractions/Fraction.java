@@ -24,7 +24,13 @@ public class Fraction {
     }
 
     public Fraction times(Fraction that) {
-        return this;
+        if (!this.equals(new Fraction(0))) {
+            return that;
+        } else if(this.equals(new Fraction(0))){
+            return this;
+        } else {
+            return new Fraction(0);
+        }
     }
 
     @Override
