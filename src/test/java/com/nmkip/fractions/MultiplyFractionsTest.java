@@ -55,4 +55,9 @@ public class MultiplyFractionsTest {
     public void oneNumeratorAndNonOneDenominator() {
         assertEquals(new Fraction(1, 4), new Fraction(1, 2).times(new Fraction(1, 2)));
     }
+
+    @Test
+    public void nonOneNumeratorNonOneDenominator() {
+        assertEquals(new Fraction(4, 21), new Fraction(2, 3).times(new Fraction(2, 7)));
+    }
 }

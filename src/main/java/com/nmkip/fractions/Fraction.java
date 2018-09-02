@@ -25,7 +25,7 @@ public class Fraction {
 
     public Fraction times(Fraction that) {
         if(this.denominator != 1) {
-            return new Fraction(that.numerator, this.denominator * that.denominator);
+            return new Fraction(that.numerator * this.numerator, this.denominator * that.denominator);
         } else if (that.denominator != 1) {
             return new Fraction(this.numerator, that.denominator);
         } else {
