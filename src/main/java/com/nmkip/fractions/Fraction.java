@@ -27,7 +27,7 @@ public class Fraction {
         if(this.denominator != 1) {
             return this;
         } else if (that.denominator != 1) {
-            return that;
+            return new Fraction(this.numerator, that.denominator);
         } else {
             return new Fraction(this.numerator * that.numerator);
         }

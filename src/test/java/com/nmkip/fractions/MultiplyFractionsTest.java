@@ -40,4 +40,9 @@ public class MultiplyFractionsTest {
     public void oneTimesNonOneDenominator() {
         assertEquals(new Fraction(1, 3), new Fraction(1).times(new Fraction(1, 3)));
     }
+
+    @Test
+    public void nonOneWholeNumberTimesNonOneDenominator() {
+        assertEquals(new Fraction(2, 3), new Fraction(2).times(new Fraction(1, 3)));
+    }
 }
